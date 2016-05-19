@@ -5,11 +5,12 @@ package Node;
  */
 public class SimpleNode<Type> extends Node implements Copyable{
     public SimpleNode(SimpleNode rightnode, Type value){
-        this.setRightnode(rightnode);
-        this.setValue(value);
+        super(rightnode, value);
     }
 
-    public SimpleNode(){}
+    public SimpleNode(){
+        super();
+    }
 
     @Override
     public Copyable copy() {

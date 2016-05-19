@@ -8,14 +8,20 @@ public class Node<Type> implements Iterable{
     private Type value;
     private int index;
 
-    public Node(){
-        this.leftnode = null;
-        this.rightnode = null;
-    }
-
     public Node(Node rightnode, Type value){
         this.rightnode = rightnode;
         this.value = value;
+    }
+
+    public Node(Node rightnode, Node leftnode, Type value){
+        this.rightnode = rightnode;
+        this.leftnode = leftnode;
+        this.value = value;
+    }
+
+    public Node(){
+        this.rightnode = null;
+        this.leftnode = null;
     }
 
     public void setRightnode(Node rightnode){

@@ -4,6 +4,14 @@ package Node;
  * Created by captaincode on 24/04/16.
  */
 public class ImplNode<Type> extends Node implements Copyable{
+    public ImplNode(Node rightnode, Node leftnode, Type value){
+        super(rightnode, leftnode, value);
+    }
+
+    public ImplNode(){
+        super();
+    }
+
     @Override
     public Copyable copy() {
         ImplNode<Type> currentnode = new ImplNode<Type>();
