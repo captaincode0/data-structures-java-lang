@@ -30,25 +30,42 @@ public class DoubleLinkedList<Type> implements ListIterable{
         }
         catch(NullPointerException ex){
             ex.printStackTrace();
+            return "";
         }
     }
 
     @Override
     public boolean add(Object value) {
         try{
-            this.recordnode = new ImplNode(null, this.headernode, (Type) value);
-            this.recordnode.setIndex();
+            //if the record node was created
+            this.recordnode = new ImplNode(this.headernode, this.headernode.prev(), (Type)value);
+            this.recordnode.setLeftnode(this.headernode);
+            this.recordnode.setIndex(this.size++);
+            this.headernode = this.recordnode;
             return true;
         }
         catch(Exception ex) {
             ex.printStackTrace();
-            return false
+            return false;
         }
     }
 
     @Override
     public boolean remove(int index) {
-        return false;
+        try{
+            if(index>=0 & index<this.size){
+                boolean founded = false;
+                for(ImplNode hnode = (ImplNode)this.headernode.copy();
+                        hnode != null;
+                        hnode = (ImplNode) hnode.next()){
+
+                }
+            }
+        }
+        catch(Exception ex){
+            ex.printStackTrace();
+            return false;
+        }
     }
 
     @Override
