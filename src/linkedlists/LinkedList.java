@@ -1,6 +1,6 @@
-package LinkedLists;
+package linkedlists;
 
-import Node.SimpleNode;
+import node.SimpleNode;
 
 /**
  * Created by captaincode on 24/04/16.
@@ -35,7 +35,7 @@ public class LinkedList<Type> implements ListIterable {
         for(SimpleNode hnode = (SimpleNode) this.headernode.copy();
                 hnode!=null;
                 hnode = (SimpleNode) hnode.next())
-            System.out.println("Node #"+hnode.getIndex()+", Value ["+hnode.getValue()+"]");
+            System.out.println("node #"+hnode.getIndex()+", Value ["+hnode.getValue()+"]");
     }
 
     public int getSize(){

@@ -1,6 +1,4 @@
-package LinkedLists;
-
-import java.lang.reflect.Array;
+package linkedlists;
 
 /**
  * Created by captaincode on 24/04/16.

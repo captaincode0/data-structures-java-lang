@@ -1,4 +1,6 @@
-package Node;
+package node;
+
+import interfaces.Iterable;
 
 /**
  * Created by captaincode on 24/04/16.
@@ -7,6 +9,11 @@ public class Node<Type> implements Iterable{
     private Node<Type> leftnode, rightnode;
     private Type value;
     private int index;
+    
+    public Node(){
+        this.rightnode = null;
+        this.leftnode = null;
+    }
 
     public Node(Node rightnode, Type value){
         this.rightnode = rightnode;
@@ -17,11 +24,6 @@ public class Node<Type> implements Iterable{
         this.rightnode = rightnode;
         this.leftnode = leftnode;
         this.value = value;
-    }
-
-    public Node(){
-        this.rightnode = null;
-        this.leftnode = null;
     }
 
     public void setRightnode(Node rightnode){

@@ -1,6 +1,6 @@
 #Estructuras de datos en Java
 
-![main banner](https://raw.githubusercontent.com/captaincode0/data-structures-java-lang/master/src/Assets/banner-ds-repo.jpg)
+![main banner](https://raw.githubusercontent.com/captaincode0/data-structures-java-lang/master/src/assets/banner-ds-repo.jpg)
 
 Este repositorio tiene la finalidad de mostrar mi proceso de reaprendizaje de estructuras de datos en general, ya que considero que son de gran utilidad para cualquier lenguaje de programación; por ejemplo que sería LISP sin las listas, mapas, vectores, no se podrían usar las mayorías de las funciones propias del lenguaje, tampoco se podría implementar para la realización de algoritmos de Inteligencia Artificial, ya que las estructuras anteriormente mencionadas son de gran utilidad para la persistencia, reducción y mapeo de los datos.
 
@@ -18,10 +18,13 @@ Las estructuras de datos tratadas en este repositorio son de memoria dinámica, 
 ##Listas enlazadas
 
 Las listas enlazadas que trataré en este apartado serán:
+
     1. Simplemente enlazadas:
     2. Dobliemente enlazadas.
     3. circulares.
-    
+
+
+
 ##Pilas
 
 ##Colas

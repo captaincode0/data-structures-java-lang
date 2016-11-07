@@ -1,4 +1,6 @@
-package Node;
+package node;
+
+import interfaces.Copyable;
 
 /**
  * Created by captaincode on 24/04/16.

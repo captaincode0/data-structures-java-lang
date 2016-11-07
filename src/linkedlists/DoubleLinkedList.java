@@ -1,6 +1,6 @@
-package LinkedLists;
+package linkedlists;
 
-import Node.ImplNode;
+import node.ImplNode;
 
 /**
  * Created by captaincode on 24/04/16.
