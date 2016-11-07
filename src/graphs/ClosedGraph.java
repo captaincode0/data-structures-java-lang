@@ -1,6 +1,4 @@
-package interfaces;
-
-import node.Node;
+package graphs;
 
 /**
  *	   _____            _        _                     _
@@ -12,8 +10,5 @@ import node.Node;
  *	             | |
  *	             |_|
  */
-
-public interface Iterable {
-    public Node prev();
-    public Node next();
+public class ClosedGraph {
 }

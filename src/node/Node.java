@@ -3,8 +3,16 @@ package node;
 import interfaces.Iterable;
 
 /**
- * Created by captaincode on 24/04/16.
+ *	   _____            _        _                     _
+ *	  / ____|          | |      (_)                   | |
+ *	 | |     __ _ _ __ | |_ __ _ _ _ __   ___ ___   __| | ___
+ *	 | |    / _` | '_ \| __/ _` | | '_ \ / __/ _ \ / _` |/ _ \
+ *	 | |___| (_| | |_) | || (_| | | | | | (_| (_) | (_| |  __/
+ *	  \_____\__,_| .__/ \__\__,_|_|_| |_|\___\___/ \__,_|\___|
+ *	             | |
+ *	             |_|
  */
+
 public class Node<Type> implements Iterable{
     private Node<Type> leftnode, rightnode;
     private Type value;

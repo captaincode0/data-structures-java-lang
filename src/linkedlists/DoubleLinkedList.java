@@ -1,12 +1,21 @@
 package linkedlists;
 
-import node.ImplNode;
+import interfaces.ListIterable;
+import node.DoubleNode;
 
 /**
- * Created by captaincode on 24/04/16.
+ *	   _____            _        _                     _
+ *	  / ____|          | |      (_)                   | |
+ *	 | |     __ _ _ __ | |_ __ _ _ _ __   ___ ___   __| | ___
+ *	 | |    / _` | '_ \| __/ _` | | '_ \ / __/ _ \ / _` |/ _ \
+ *	 | |___| (_| | |_) | || (_| | | | | | (_| (_) | (_| |  __/
+ *	  \_____\__,_| .__/ \__\__,_|_|_| |_|\___\___/ \__,_|\___|
+ *	             | |
+ *	             |_|
  */
-public class DoubleLinkedList<Type> implements ListIterable{
-    private ImplNode headernode, recordnode;
+
+public class DoubleLinkedList<Type> implements ListIterable {
+    private DoubleNode headernode, recordnode;
     private int size;
 
     public DoubleLinkedList(){
@@ -18,12 +27,12 @@ public class DoubleLinkedList<Type> implements ListIterable{
     public String toString() {
         try {
             StringBuilder sb = new StringBuilder(4096);
-            ImplNode hnode = (ImplNode) this.headernode.copy();
+            DoubleNode hnode = (DoubleNode) this.headernode.copy();
             sb.append("[");
 
             for(;hnode != null;
                 sb.append(hnode.getValue()+" "),
-                hnode = (ImplNode) hnode.prev());
+                hnode = (DoubleNode) hnode.prev());
             sb.append("]");
 
             return sb.toString();
@@ -38,7 +47,7 @@ public class DoubleLinkedList<Type> implements ListIterable{
     public boolean add(Object value) {
         try{
             //if the record node was created
-            this.recordnode = new ImplNode(this.headernode, this.headernode.prev(), (Type)value);
+            this.recordnode = new DoubleNode(this.headernode, this.headernode.prev(), (Type)value);
             this.recordnode.setLeftnode(this.headernode);
             this.recordnode.setIndex(this.size++);
             this.headernode = this.recordnode;
@@ -55,17 +64,18 @@ public class DoubleLinkedList<Type> implements ListIterable{
         try{
             if(index>=0 & index<this.size){
                 boolean founded = false;
-                for(ImplNode hnode = (ImplNode)this.headernode.copy();
-                        hnode != null;
-                        hnode = (ImplNode) hnode.next()){
+                for(DoubleNode hnode = (DoubleNode)this.headernode.copy();
+                    hnode != null;
+                    hnode = (DoubleNode) hnode.next()){
 
                 }
             }
         }
         catch(Exception ex){
             ex.printStackTrace();
-            return false;
         }
+
+        return false;
     }
 
     @Override

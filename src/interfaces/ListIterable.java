@@ -1,7 +1,5 @@
 package interfaces;
 
-import node.Node;
-
 /**
  *	   _____            _        _                     _
  *	  / ____|          | |      (_)                   | |
@@ -13,7 +11,9 @@ import node.Node;
  *	             |_|
  */
 
-public interface Iterable {
-    public Node prev();
-    public Node next();
+public interface ListIterable {
+    public boolean add(Object value);
+    public boolean remove(int index);
+    public Object get(int index);
+    public Object[] toArray();
 }
